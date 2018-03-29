@@ -1,8 +1,19 @@
 <template>
   <div>
+    <the-navigation/>
     <nuxt/>
   </div>
 </template>
+
+<script>
+import TheNavigation from '@/components/TheNavigation'
+export default {
+  components: {
+    TheNavigation
+  }
+}
+</script>
+
 
 <style>
 html
@@ -49,5 +60,10 @@ html
 {
   color: #fff;
   background-color: #35495e;
+}
+
+a {
+  display: inline-block;
+  margin: 5px 15px;
 }
 </style>
